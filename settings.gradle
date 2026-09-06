@@ -1,0 +1,22 @@
+// 插件管理
+pluginManagement {
+	repositories {
+		gradlePluginPortal()
+		maven {
+			name "Minecraft Forge"
+			url "https://maven.minecraftforge.net/"
+		}
+		maven {
+			name "Parchment MC"
+			url "https://maven.parchmentmc.org"
+		}
+	}
+}
+
+// 插件
+plugins {
+	id "org.gradle.toolchains.foojay-resolver-convention" version "0.7.0"
+}
+
+// 根项目名称
+rootProject.name = "cmc"

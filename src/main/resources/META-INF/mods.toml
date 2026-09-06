@@ -1,0 +1,40 @@
+# 模组加载器
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+
+# 许可证
+license = "${mod_license}"
+
+# 模组主体信息
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+authors = "${mod_authors}"
+description = """${mod_description}"""
+displayURL = "https://github.com/XiaofanDelta/CMCCore"
+
+# 依赖关系
+# Forge 依赖
+[[dependencies.${mod_id}]]
+modId = "forge"
+mandatory = true
+versionRange = "${forge_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+# Minecraft 依赖
+[[dependencies.${mod_id}]]
+modId = "minecraft"
+mandatory = true
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+# JEI 依赖
+[[dependencies.${mod_id}]]
+modId="jei"
+mandatory=false
+versionRange="[15.0,)"
+ordering="AFTER"
+side="CLIENT"
