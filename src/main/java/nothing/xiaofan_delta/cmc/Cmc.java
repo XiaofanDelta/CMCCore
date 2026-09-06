@@ -3,6 +3,7 @@ package nothing.xiaofan_delta.cmc;
 import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
+import org.slf4j.Logger;
 
 @Mod(Cmc.MODID)
 public class Cmc {

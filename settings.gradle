@@ -19,4 +19,4 @@ plugins {
 }
 
 // 根项目名称
-rootProject.name = "cmc"
+rootProject.name = "cmc_core"
